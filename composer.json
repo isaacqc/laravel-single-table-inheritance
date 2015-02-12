@@ -1,5 +1,5 @@
 {
-  "name": "isaacqc/laravel-single-table-inheritance",
+  "name": "jacopo/laravel-single-table-inheritance",
   "description": "A package that contains a model for single table inheritance with eloquent(laravel orm)",
   "keywords": ["single", "table", "inheritance", "laravel", "eloquent", "model"],
   "license": "MIT",

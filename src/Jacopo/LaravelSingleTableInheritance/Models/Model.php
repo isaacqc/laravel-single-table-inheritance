@@ -135,13 +135,13 @@ abstract class Model extends Eloquent {
    * @param mixed  $value
    * @throws \Jacopo\LaravelTableInheritance\Exceptions\InvalidAttributeException
    */
-  public function setAttribute($key, $value) {
-    if (($key == static::$table_type_field) || (!$this->isInAllAttributes($key))) {
-      throw new InvalidAttributeException("The attribute {$key} is non available.");
-    }
+//   public function setAttribute($key, $value) {
+//     if (($key == static::$table_type_field) || (!$this->isInAllAttributes($key))) {
+//       throw new InvalidAttributeException("The attribute {$key} is non available.");
+//     }
 
-    return parent::setAttribute($key, $value);
-  }
+//     return parent::setAttribute($key, $value);
+//   }
 
   /**
    * Dont let get data attributes key not in $all_attributes and $eloquent_attributes array
@@ -150,13 +150,13 @@ abstract class Model extends Eloquent {
    * @return mixed
    * @throws  \Jacopo\LaravelTableInheritance\Exceptions\InvalidAttributeException
    */
-  public function getAttribute($key) {
-    if (!$this->isInAllAttributes($key)) {
-      throw new InvalidAttributeException("The attribute {$key} is non available.");
-    }
+//   public function getAttribute($key) {
+//     if (!$this->isInAllAttributes($key)) {
+//       throw new InvalidAttributeException("The attribute {$key} is non available.");
+//     }
 
-    return parent::getAttribute($key);
-  }
+//     return parent::getAttribute($key);
+//   }
 
   /**
    * Check if the key is in $all_attributes or in $eloquent_attributes array fields
